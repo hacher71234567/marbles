@@ -1,0 +1,42 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: red;
+}
+.board {
+  width: 200px;
+  border-style: solid;
+  border-color:red;
+  border-width: 5px;
+  padding: 4px;
+  border-spacing: 7px;
+}
+.cell {
+  border-style: solid;
+}
+.cellA {
+  column-span: 2;
+  border-color: yellow;
+  height: 30px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-spacing: 7px;
+  
+}
+.cellB {
+  border-style: solid;
+  border-color: blue;
+  height: 20px;
+  padding: 2px;
+  
+} 
+.cellC {
+ border-style: solid;  
+ border-color: green;
+  height: 20px;
+  padding: 2px;
+}
+
+.winner {
+  
+}
