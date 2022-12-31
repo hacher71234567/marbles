@@ -1,7 +1,7 @@
 import { INVALID_MOVE } from 'boardgame.io/core';
 
 export const TicTacToe = {
-  setup: () => ({ cells: Array(9).fill(null) }),
+  setup: () => ({ cells: Array(14).fill(3) }),
 
   turn: {
     moveLimit: 1,
@@ -9,10 +9,11 @@ export const TicTacToe = {
 
   moves: {
     clickCell: (G, ctx, id) => {
-      if (G.cells[id] !== null) {
+      if ([1,2,3,4,5,6].includes(id) && ctx.currentPlayer == 1)
         return INVALID_MOVE;
-      }
-      G.cells[id] = ctx.currentPlayer;
+      if ([8,9,10, 11, 12,13].includes(id) && ctx.currentPlayer == 0)
+        return INVALID_MOVE;
+      if (G.cells[id] == 0) return INVALID_MOVE;
     },
   },
 
