@@ -1,8 +1,7 @@
 {
   "name": "marbles",
   "version": "1.0.0",
-  "description": "Tutorial code for following along with the Plain JS tutorial for boardgame.io.",
-  "main": "index.html",
+  "description": "Marbles game",
   "scripts": {
     "start": "parcel index.html --open",
     "build": "parcel build index.html"
@@ -16,5 +15,5 @@
     "@babel/core": "*",
     "parcel-bundler": ""
   },
-  "keywords": ["boardgame.io", "tutorial"]
+  "keywords": ["boardgame.io", "marbles"]
 }
