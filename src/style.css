@@ -4,6 +4,11 @@ body {
   width: 100%;
   padding: 10px;
 }
+#app {
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
 
 .board {
   display: block;
@@ -24,24 +29,58 @@ body {
 .cellB {
   border-color: blue;
   background-color: beige;
-  flex: 50%;
+}
+.cellB:hover:enabled {
+  background-color: cornflowerblue;
+  color: white;
+  cursor: pointer;
 }
 .cellC {
   border-color: green;
   background-color: beige;
   flex: 50%;
 }
-.cellB, .cellC {
-  flex: 50%;
+.cellC:hover:enabled {
+  background-color: darkseagreen;
+  color: white;
   cursor: pointer;
 }
-.cellA, .cellB, .cellC {
+.cellA,
+.cellB,
+.cellC {
   border-style: solid;
   margin: 10px;
   padding: 8px;
   border-radius: 5px;
   text-align: center;
   font-size: large;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
 }
-.winner {
+.cellB,
+.cellC {
+  flex: 50%;
+}
+.fireworks {
+  z-index: -9;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.showing {
+  z-index: 9;
 }

@@ -3,17 +3,21 @@
   "version": "1.0.0",
   "description": "Marbles game",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "start": "parcel index.html --open --no-cache",
+    "build": "parcel build index.html --no-cache"
   },
   "browserslist": "defaults and supports async-functions",
   "dependencies": {
     "boardgame.io": "*",
-    "canvas-confetti": "1.6.0"
+    "fireworks-js": "*"
   },
   "devDependencies": {
     "@babel/core": "*",
-    "parcel-bundler": ""
+    "parcel-bundler": "",
+    "typescript": "^4.9.4"
   },
-  "keywords": ["boardgame.io", "marbles"]
+  "keywords": [
+    "boardgame.io",
+    "tutorial"
+  ]
 }
