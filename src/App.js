@@ -1,6 +1,6 @@
 import { Client } from 'boardgame.io/client';
 import { TicTacToe } from './Game';
-import confetti from 'canvas-confetti';
+import fireworks from 'canvas-confetti';
 class TicTacToeClient {
   constructor(rootElement) {
     this.client = Client({ game: TicTacToe });
@@ -34,11 +34,11 @@ class TicTacToeClient {
     const messageEl = this.rootElement.querySelector('.winner');
     // Update the element to show a winner if any.
     if (state.ctx.gameover) {
-      confetti();
+      fireworks();
     } else {
       messageEl.textContent = '';
     }
-  }
+  }S
 }
 
 const appElement = document.getElementById('app');
