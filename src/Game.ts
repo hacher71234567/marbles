@@ -2,6 +2,7 @@ import { INVALID_MOVE } from 'boardgame.io/core';
 const Player0Cells = [1, 2, 3, 4, 5, 6];
 const Player1Cells = [8, 9, 10, 11, 12, 13];
 
+
 export const TicTacToe = {
   setup: () => {
     const G = {

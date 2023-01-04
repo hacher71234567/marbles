@@ -2,18 +2,22 @@
   "name": "marbles",
   "version": "1.0.0",
   "description": "Marbles game",
+  "license": "MIT",
   "scripts": {
-    "start": "parcel index.html --open --no-cache",
-    "build": "parcel build index.html --no-cache"
+    "start": "node start.mjs & live-server --port=4001 --watch=dist dist",
+    "build": "node build.mjs & live-server --port=4002 dist"
   },
   "browserslist": "defaults and supports async-functions",
   "dependencies": {
+    "@craftamap/esbuild-plugin-html": "^0.5.0",
     "boardgame.io": "*",
-    "fireworks-js": "*"
+    "fireworks-js": "*",
+    "live-server": "^1.2.2"
   },
   "devDependencies": {
     "@babel/core": "*",
-    "parcel-bundler": "",
+    "esbuild": "0.16.13",
+    "esbuild-linux-arm64": "0.15.18",
     "typescript": "^4.9.4"
   },
   "keywords": [

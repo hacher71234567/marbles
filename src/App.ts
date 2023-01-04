@@ -35,7 +35,8 @@ class TicTacToeClient {
     });
   }
 
-  update(state: ClientState<G | undefined>) {
+  
+  update(state: ClientState<G |  undefined>) {
     // Get all the board cells.
     const cells = this.rootElement.querySelectorAll<HTMLElement>(
       '.cellA, .cellB, .cellC'
